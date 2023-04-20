@@ -9,7 +9,6 @@ env:
   IMAGE_NAME: ${{ github.repository }}
   TO_SVG_STRING_PRETTY_MAYHEMFILE: mayhem/to_svg_string_pretty.mayhemfile
   TO_SVG_STRING_COMPRESSED_MAYHEMFILE: mayhem/to_svg_string_compressed.mayhemfile
-  TO_SVG_WITH_SETTINGS_MAYHEMFILE: mayhem/to_svg_with_settings.mayhemfile
 
 jobs:
   build:
@@ -65,15 +64,6 @@ jobs:
           args: 
             --image ${{ steps.meta.outputs.tags }} 
             --file ${{ env.TO_SVG_STRING_COMPRESSED_MAYHEMFILE }}
-            --duration 1800
-          sarif-output: sarif
-      - name: Start analysis for to_svg_with_settings
-        uses: ForAllSecure/mcode-action@v1
-        with:
-          mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-          args: 
-            --image ${{ steps.meta.outputs.tags }} 
-            --file ${{ env.TO_SVG_WITH_SETTINGS_MAYHEMFILE }}
             --duration 1800
           sarif-output: sarif
 

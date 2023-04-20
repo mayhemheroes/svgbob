@@ -28,9 +28,3 @@ name = "fuzz_to_svg_string_compressed"
 path = "fuzz_targets/to_svg_string_compressed.rs"
 test = false
 doc = false
-
-[[bin]]
-name = "fuzz_to_svg_with_settings"
-path = "fuzz_targets/to_svg_with_settings.rs"
-test = false
-doc = false
