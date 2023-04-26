@@ -1,6 +1,0 @@
-project: svgbob
-target: to_svg_with_settings
-duration: 1800
-cmds:
-    - cmd: /fuzzers/fuzz_to_svg_with_settings
-

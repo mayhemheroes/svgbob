@@ -1,7 +1,7 @@
 project: tools
-target: to_svg_string_pretty
+target: to_svg_fast
 duration: 600
 cmds:
-    - cmd: /fuzzers/fuzz_to_svg_string_pretty
+    - cmd: /fuzzers/fuzz_to_svg_fast
 testsuite:
     - file:///corpus/ascii_diagrams
