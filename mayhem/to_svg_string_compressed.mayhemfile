@@ -1,0 +1,7 @@
+project: tools
+target: to_svg_string_compressed
+duration: 600
+cmds:
+    - cmd: /fuzzers/fuzz_to_svg_string_compressed
+testsuite:
+    - file:///corpus/ascii_diagrams
